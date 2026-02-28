@@ -1,4 +1,7 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 session_start();
 include("backend/conexion.php");
 
@@ -21,5 +24,6 @@ while($row = $resultado->fetch_assoc()){
     echo "</div>";
 }
 ?>
+
 
 <a href="logout.php">Cerrar sesión</a>
